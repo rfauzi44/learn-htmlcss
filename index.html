@@ -17,6 +17,7 @@
             grid-template-columns: auto auto auto;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 </head>
 
@@ -28,13 +29,21 @@
                 aliquid cupiditate deserunt reiciendis minus maxime odio veniam repellat soluta commodi officiis,
                 quaerat voluptatibus dignissimos dolor.</p>
         </div>
-        <div class="grid-container">
+        <div class="grid-item">
             <h1>Hello</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi labore dolore tenetur nisi mollitia
                 aliquid cupiditate deserunt reiciendis minus maxime odio veniam repellat soluta commodi officiis,
                 quaerat voluptatibus dignissimos dolor.</p>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $(".grid-item").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
 </body>
+
 
 </html>
